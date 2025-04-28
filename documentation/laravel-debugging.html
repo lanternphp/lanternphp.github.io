@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Debugging / Exceptions | Lantern</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/hero.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,800,800i,900,900i">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <meta name="description" content="A deeply integrated extension to your Laravel app">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.da13e7e6.css" as="style"><link rel="preload" href="/assets/js/app.84ade021.js" as="script"><link rel="preload" href="/assets/js/2.79b6fbc0.js" as="script"><link rel="preload" href="/assets/js/1.1cd8f69d.js" as="script"><link rel="preload" href="/assets/js/40.c7b4b24a.js" as="script"><link rel="prefetch" href="/assets/js/11.9db4018d.js"><link rel="prefetch" href="/assets/js/12.48022f3f.js"><link rel="prefetch" href="/assets/js/13.cb80dd83.js"><link rel="prefetch" href="/assets/js/14.66aa263d.js"><link rel="prefetch" href="/assets/js/15.99658a51.js"><link rel="prefetch" href="/assets/js/16.54f54bce.js"><link rel="prefetch" href="/assets/js/17.fb32f15f.js"><link rel="prefetch" href="/assets/js/18.364bf9b3.js"><link rel="prefetch" href="/assets/js/19.347f0eba.js"><link rel="prefetch" href="/assets/js/20.f08316bf.js"><link rel="prefetch" href="/assets/js/21.4d95c4c3.js"><link rel="prefetch" href="/assets/js/22.db163967.js"><link rel="prefetch" href="/assets/js/23.ab56d8e1.js"><link rel="prefetch" href="/assets/js/24.605a62a1.js"><link rel="prefetch" href="/assets/js/25.b5599300.js"><link rel="prefetch" href="/assets/js/26.0f0e25e2.js"><link rel="prefetch" href="/assets/js/27.0fb200ea.js"><link rel="prefetch" href="/assets/js/28.21385bd3.js"><link rel="prefetch" href="/assets/js/29.d0eb0eb5.js"><link rel="prefetch" href="/assets/js/3.c5a3336d.js"><link rel="prefetch" href="/assets/js/30.de6c271f.js"><link rel="prefetch" href="/assets/js/31.e2202223.js"><link rel="prefetch" href="/assets/js/32.1058090a.js"><link rel="prefetch" href="/assets/js/33.21b9a53c.js"><link rel="prefetch" href="/assets/js/34.7f7e920d.js"><link rel="prefetch" href="/assets/js/35.c3eddcdc.js"><link rel="prefetch" href="/assets/js/36.f131f98b.js"><link rel="prefetch" href="/assets/js/37.aee94308.js"><link rel="prefetch" href="/assets/js/38.8a87d8f6.js"><link rel="prefetch" href="/assets/js/39.6a491a83.js"><link rel="prefetch" href="/assets/js/4.7c6f071f.js"><link rel="prefetch" href="/assets/js/41.4c93beaf.js"><link rel="prefetch" href="/assets/js/42.817b5eaa.js"><link rel="prefetch" href="/assets/js/43.21d033f1.js"><link rel="prefetch" href="/assets/js/5.da8ab6e0.js"><link rel="prefetch" href="/assets/js/6.8eb5be5f.js"><link rel="prefetch" href="/assets/js/7.950849db.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.934ed2fb.js"><link rel="prefetch" href="/assets/js/vendors~notification.f69c5b01.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.da13e7e6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Lantern</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/documentation/" class="nav-link router-link-active">
+  Documentation
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Learn More" class="dropdown-title"><span class="title">Learn More</span> <span class="arrow down"></span></button> <button type="button" aria-label="Learn More" class="mobile-dropdown-title"><span class="title">Learn More</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/faq/" class="nav-link">
+  FAQ
+</a></li><li class="dropdown-subitem"><a href="/miscellaneous/glossary.html" class="nav-link">
+  Glossary
+</a></li><li class="dropdown-subitem"><a href="/miscellaneous/credits.html" class="nav-link">
+  Credits
+</a></li></ul></li></ul></div></div> <a href="https://github.com/lanternphp/lantern" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/documentation/" class="nav-link router-link-active">
+  Documentation
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Learn More" class="dropdown-title"><span class="title">Learn More</span> <span class="arrow down"></span></button> <button type="button" aria-label="Learn More" class="mobile-dropdown-title"><span class="title">Learn More</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/faq/" class="nav-link">
+  FAQ
+</a></li><li class="dropdown-subitem"><a href="/miscellaneous/glossary.html" class="nav-link">
+  Glossary
+</a></li><li class="dropdown-subitem"><a href="/miscellaneous/credits.html" class="nav-link">
+  Credits
+</a></li></ul></li></ul></div></div> <a href="https://github.com/lanternphp/lantern" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Docs</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/documentation/" aria-current="page" class="sidebar-link">Introduction</a></li><li><a href="/documentation/installation.html" class="sidebar-link">Installation</a></li><li><a href="/documentation/features.html" class="sidebar-link">Features</a></li><li><a href="/documentation/actions.html" class="sidebar-link">Actions</a></li><li><a href="/documentation/availability.html" class="sidebar-link">Availability</a></li><li><a href="/documentation/constraints.html" class="sidebar-link">Constraints</a></li><li><a href="/documentation/authorisation.html" class="sidebar-link">Authorisation</a></li><li><a href="/documentation/directory-structure.html" class="sidebar-link">Directory Structure</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="debugging-exceptions"><a href="#debugging-exceptions" class="header-anchor">#</a> Debugging / Exceptions</h1> <ul class="contains-task-list"><li class="task-list-item"><input disabled="disabled" type="checkbox" class="task-list-item-checkbox"> Yet to be implemented</li></ul> <h2 id="the-plan"><a href="#the-plan" class="header-anchor">#</a> The plan</h2> <ul><li>Record the recent history of <mark>Actions</mark> performed by a user</li> <li>Integrate Lantern with Laravel's exception handling</li> <li>Ensure any Exceptions reported include a user's history to aid debugging</li> <li>Remove any sensitive data that may be included with the history</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.84ade021.js" defer></script><script src="/assets/js/2.79b6fbc0.js" defer></script><script src="/assets/js/1.1cd8f69d.js" defer></script><script src="/assets/js/40.c7b4b24a.js" defer></script>
+  </body>
+</html>
